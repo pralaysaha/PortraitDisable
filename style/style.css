@@ -1,0 +1,45 @@
+.showdisabledPortrait {
+  position: absolute;
+  left: 0px;
+  z-index: 99;
+  top: 0px;
+  height: 100vh;
+  display: none;
+  width: 100%;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.imgPoLand {
+  max-width: 40%;
+}
+
+.normalBodyContainer {
+  height: 100vh;
+  display: block;
+  width: 100%;
+  background-color: brown;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+  font-size: 50pt;
+}
+
+@media only screen 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .normalBodyContainer {
+        display: none;
+      }
+      .showdisabledPortrait {
+        display: block;
+      }
+}
